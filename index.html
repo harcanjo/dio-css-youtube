@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Replica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="hamburger">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </div>
+    <img src="assets/youtube-logo.png" alt="YouTube Logo">
+    <form action="">
+      <input type="text" placeholder="Search">
+      <input type="submit" value="Go">
+    </form>
+  </header>
+  <aside>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Subscriptions</a></li>
+      <li><a href="#">Library</a></li>
+      <li><a href="#">History</a></li>
+    </ul>
+  </aside>
+  <main>
+    <div class="current-video">
+      <div class="current-video-placeholder"></div>
+      <h1>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
+      <div class="container">
+        <img src="assets/Channel Avatar.png" alt="Avatar do canal">
+        <div class="text">
+          <h2>Dio</h2>
+          <p>83.3 mil inscritos</p>
+        </div>
+        <button>Inscreva-se</button>
+        <img src="assets/Vector.png" alt="Thumbs Up">
+        <p>2 mil</p>
+        <img src="assets/Vector (1).png" alt="Thumbs Down">
+        <p>Não gostei</p>
+        <img src="assets/Vector (2).png" alt="Share" width="25px">
+        <p>Share</p>
+        <img src="assets/Vector (3).png" alt="Download" width="25px">
+        <p>Download</p>
+      </div>
+    </div>
+    <div class="recommended-videos">
+      <h2>Recommended Videos</h2>
+      <!-- Add your recommended video elements here -->
+      <div class="recommended-video">
+        <div class="recommended-video-thumbnail"></div>
+        <div class="recommended-video-details">
+          <h3>Video Title: Blah Blah Blah</h3>
+          <p>Channel Name</p>
+          <p>Video Abstract, with more bla blah bl</p>
+        </div>
+      </div>
+      <div class="recommended-video">
+        <div class="recommended-video-thumbnail"></div>
+        <div class="recommended-video-details">
+          <h3>Video Title: Blah Blah Blah</h3>
+          <p>Channel Name</p>
+          <p>Video Abstract, with more bla blah bl</p>
+        </div>
+      </div>
+      <div class="recommended-video">
+        <div class="recommended-video-thumbnail"></div>
+        <div class="recommended-video-details">
+          <h3>Video Title: Blah Blah Blah</h3>
+          <p>Channel Name</p>
+          <p>Video Abstract, with more bla blah bl</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', () => {
+      document.body.classList.toggle('menu-open');
+    });
+
+  </script>
+
+</body>
